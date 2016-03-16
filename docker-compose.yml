@@ -1,0 +1,26 @@
+version: '2'
+
+networks:
+  default:
+    external:
+      name: my-net
+
+services:
+  service1:
+    build: ./service1
+#    image: jeanblanchard/java
+    image: registryint.spain.schibsted.io/service1
+    ports:
+      - 8000
+    restart: always
+#    environment:
+#      - "constraint:node==swarm-agent-01"
+
+  service2:
+    build: ./service2
+    image: registryint.spain.schibsted.io/service2
+#    environment:
+#      - "constraint:node==swarm-agent-02"
+    ports:
+      - 8000
+    restart: always

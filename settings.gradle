@@ -1,0 +1,4 @@
+rootProject.name = 'springconsul'
+include 'service1'
+include 'service2'
+
