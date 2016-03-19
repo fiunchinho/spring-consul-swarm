@@ -88,6 +88,7 @@ Please, notice that the container must run in the overlay network that we just c
 The containers have everything they need to run, without volumes, so we need to build and publish images for the current version of the applications into a private Docker registry. Notice that the `DOCKER_REGISTRY` variable should be the same you used in the docker-compose file. The `VERSION` variable will contain the current timestamp, but you can use whatever you want to tag your images.
 
 ```bash
+$ ./gradlew clean build
 $ docker-compose build
 $ DOCKER_REGISTRY="your-registry.com"
 $ VERSION=`date +%s`
