@@ -7,7 +7,8 @@ We will use overlay multi-host network, so we need Consul. Let's create a node o
 
 ```bash
 $ docker-machine create -d amazonec2 \
-    --amazonec2-access-key *** --amazonec2-secret-key *** --amazonec2-region eu-west-1 --amazonec2-vpc-id vpc-*** \
+    --amazonec2-access-key *** --amazonec2-secret-key *** \
+    --amazonec2-region eu-west-1 --amazonec2-vpc-id vpc-*** \
     consul01
 ```
 
