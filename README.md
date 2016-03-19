@@ -151,8 +151,8 @@ $ kill -9 PID_THAT_YOU_CHOOSE
 At this point, you should see in the first terminal the events related with the failure and startup of the killed container. Something like
 
 ```bash
-2016-03-16 11:47:02.359442 container die 1d782035fd0c604f83262cf4bcf9b85c3e7d2b77fc05995f90af1646d7adc849 (image=registry.io/service1 node:swarm-agent-01, name=springconsulswarm_service1_3)
-2016-03-16 11:47:02.459683 container start 1d782035fd0c604f83262cf4bcf9b85c3e7d2b77fc05995f90af1646d7adc849 (image=registry.io/service1 node:swarm-agent-01, name=springconsulswarm_service1_3)
+2016-03-16 11:47:02.359442 container die 1d782035fd0c604f83262cf4bcf9b85c3e7d2b77fc05995f90af1646d7adc849 (image=registry.io/service1 node:swarm-agent-01, name=spring_consul_swarm_service1_3)
+2016-03-16 11:47:02.459683 container start 1d782035fd0c604f83262cf4bcf9b85c3e7d2b77fc05995f90af1646d7adc849 (image=registry.io/service1 node:swarm-agent-01, name=spring_consul_swarm_service1_3)
 ```
 
 So even though our container _failed_, Docker automatically started it again.

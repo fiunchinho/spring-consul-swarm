@@ -1,4 +1,4 @@
-rootProject.name = 'springconsul'
+rootProject.name = 'spring-consul-swarm'
 include 'service1'
 include 'service2'
 
